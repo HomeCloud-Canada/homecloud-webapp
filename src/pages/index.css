@@ -12,3 +12,29 @@ body,
 body {
   margin: 0px;
 }
+
+header {
+  position: relative;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  bottom: 83px;
+  left: 44%;
+  border-bottom: 6px solid #ffdc6b;
+  border-radius: 15px;
+}
+
+.images {
+  isolation: isolate; /* Without isolation, the background color will be taken into account */
+}
+
+.circ {
+  position: absolute;
+  height: 602px;
+  left: 921px;
+  top: 260px;
+  mix-blend-mode: soft-light;
+}
